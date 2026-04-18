@@ -1,12 +1,32 @@
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
 body {
     color: white;
-    background-color: #090b11;
+    background-image: url("Img/TabernBG.jpg");
+    backdrop-filter: blur(5px);
+    background-size: cover;
+
 }
+
 
 .titulo {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-shadow: 5px 5px 5px #00000071;
+    background-color: #0e121b;
+    
+    
 }
 
 
@@ -27,6 +47,8 @@ body {
     border-radius: 7px;
     padding: 10px;
 
+    filter: drop-shadow(5px 5px 5px #000000e1);
+    
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 
@@ -41,7 +63,54 @@ body {
     background-color:#0e121b ;
     padding: 10px;
 
-    color: #fffdfc;
+    filter: drop-shadow(5px 5px 5px #000000e1);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 5px 5px 5px #000000c7;
+}
+.infoblock {
+    width: 25em;
+    height: auto;
+    background-color: #111;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: #d15014a4;
+    border-width: 2px;
+    padding: 10px;
+    filter: drop-shadow(7px 7px 7px #000000c9);
+}
+
+.infoblock img {
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+    align-items: end;
+}
+
+.infoblock:hover {
+    border-color: #dd5719;
+}
+
+
+.scrollingframe {
+
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+
+    border-style: solid;
+    border-radius: 7px;
+    border-color: #d15014d2;
+    border-width: 1px;
+
+    overflow-x: scroll;
+
+
+    background-color:#0e121b ;
+    padding: 10px;
+
+    filter: drop-shadow(5px 5px 5px #000000e1);
+
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 5px 5px 5px #000000c7;
 }
