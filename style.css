@@ -6,7 +6,7 @@ body {
 
 .titulo {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    text-shadow: 5px 5px 5px #00000071;
 }
 
 
@@ -34,8 +34,8 @@ body {
 
 .container {
     border-style: solid;
-    border-radius: 2px;
-    border-color: #d15014;
+    border-radius: 7px;
+    border-color: #d15014d2;
     border-width: 1px;
 
     background-color:#0e121b ;
@@ -43,6 +43,7 @@ body {
 
     color: #fffdfc;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 5px 5px 5px #000000c7;
 }
 
 
@@ -58,4 +59,16 @@ body {
     background-color: #090b11;
     border-radius: 5px;
     padding: 2px;
+    text-decoration: none;
 }
+
+.importante:hover {
+    color: #ff9d6f;
+    padding: 4px;
+
+    border-style: solid;
+    border-color: #f570338e;
+    border-width: 1px;
+    text-decoration: underline;
+}
+
