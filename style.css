@@ -13,6 +13,7 @@
 }
 
 body {
+    margin: 0;
     color: white;
     background-image: url("Img/TabernBG.jpg");
     backdrop-filter: blur(5px);
@@ -39,22 +40,23 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
+hr {
+  border: none;
+  height: 2px;
+  background-color: #d15014;
+}
 
 .container_title {
     color: #d15014;   
-    background-color:#0e121b ;
+    background-color:#0000002f ;
     border-radius: 7px;
     padding: 10px;
-
-    filter: drop-shadow(5px 5px 5px #000000e1);
-    
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
+    font-family: "Cinzel Decorative", serif; 
 
 }
 
 .container {
+    margin: 10px;
     border-style: solid;
     border-radius: 7px;
     border-color: #d15014d2;
@@ -81,6 +83,8 @@ body {
     }
     
 }
+
+
 
 .infoblock {
     flex: 0 0 5em;
@@ -163,3 +167,137 @@ body {
     text-decoration: underline;
 }
 
+.shoplist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 3em;
+    border-radius: .7em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d15014;
+    background-color: #0a0c13;
+    
+    
+}
+
+.shopframe {
+    
+    flex: 0 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d15014be;
+    
+
+}
+
+.shopframe h1 {
+    background-color: #0e121be5;
+    border-radius: .5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: .5em;
+    width: auto;
+    height: auto;
+}
+
+.shopframe p {
+    background-color: #0e121be5;
+    border-radius: .5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: .5em;
+    width: auto;
+    height: auto;
+}
+
+
+.shopframe img {
+   
+    object-fit: contain;
+    
+}
+
+@keyframes appear {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+         transform: translateY(0%);
+         opacity: 1;
+    }
+}
+
+@keyframes on_hover {
+    0% {
+        transform: translateY(0%);
+        
+    }
+    100% {
+         transform: translateY(-6%);
+         color: #d15014;
+    }
+}
+
+.topscreen {
+    
+    padding:1em;
+    background-color: #0a0c13;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #d15014;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.507));
+    display: flex;  
+    gap: 1em;  
+   
+}
+
+.topscreen img {
+    animation: appear 0.6s ease forwards;
+    width: 5em;
+    height: 5em;
+    align-items: center;
+
+}
+
+.topscreen h1 {
+   animation: appear 0.6s ease forwards;
+     font-family: "Cinzel Decorative", serif;
+    align-items: center;
+    text-align: center;
+}
+
+.topscreen ol {
+   animation: appear 0.6s ease forwards;
+    margin-left: 3em;
+    flex-grow: 1;
+    padding: 1em;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3em;
+
+    border-color: #d150148f;
+
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+
+    
+}
+
+.topscreen li {
+    
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    font-family: "Cinzel Decorative", serif;
+    background-color: #0e121b;
+    border-radius: 3em;
+
+    }
+
+.topscreen li:hover {
+  animation: on_hover 0.07s ease-in forwards;
+}
