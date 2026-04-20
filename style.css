@@ -167,55 +167,6 @@ hr {
     text-decoration: underline;
 }
 
-.shoplist {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    padding: 3em;
-    border-radius: .7em;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #d15014;
-    background-color: #0a0c13;
-    
-    
-}
-
-.shopframe {
-    
-    flex: 0 0;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #d15014be;
-    
-
-}
-
-.shopframe h1 {
-    background-color: #0e121be5;
-    border-radius: .5em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: .5em;
-    width: auto;
-    height: auto;
-}
-
-.shopframe p {
-    background-color: #0e121be5;
-    border-radius: .5em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: .5em;
-    width: auto;
-    height: auto;
-}
-
-
-.shopframe img {
-   
-    object-fit: contain;
-    
-}
-
 @keyframes appear {
     0% {
         transform: translateY(100%);
@@ -298,6 +249,26 @@ hr {
 
     }
 
+.topscreen a {
+    
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    font-family: "Cinzel Decorative", serif;
+    background-color: #0e121b;
+    border-radius: 3em;
+    text-decoration: none;
+    color: white;
+    }
+
+.topscreen a:hover {
+    color: #d15014;
+    
+}
+.topscreen a:hover::before {
+  content: " > ";
+}
 .topscreen li:hover {
   animation: on_hover 0.07s ease-in forwards;
+  color: #d15014;
 }
